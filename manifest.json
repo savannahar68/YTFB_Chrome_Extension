@@ -1,6 +1,6 @@
 {
-  "name":"Audio Sync and Ad Skip",
-  "short_name": "Audio Sync and Ad Skip",
+  "name":"Video Volume Sync and Ad Skip",
+  "short_name": "Video Volume Sync and Ad Skip",
   "description":"A simple extension that synchronizes audio of all the video (Needed on facebook where all the videos are on 100% volume or mute) and Ad skipper specially made for youtube",
   "manifest_version": 2,
   "version":"0.1.0",
