@@ -6,10 +6,19 @@
   "version":"0.1.0",
   "author":"Savan Nahar",
   "homepage_url": "https://github.com/savannahar68",
+  "permissions": [
+    "storage"
+  ],
   "content_scripts":[
     {
       "matches": ["*://*.youtube.com/*"],
       "js":["adskip.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js":["fbVolSync.js"],
       "run_at": "document_end",
       "all_frames": true
     }
