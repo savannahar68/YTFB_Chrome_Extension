@@ -15,3 +15,5 @@ Installation Guideline
 5. Enjoy
 
 Open a issue for more feature or fixes.
+
+YT Sciript taken from [squgeim](https://github.com/squgeim/yt-ad-autoskipper) which will be converted to Ad-Block in next version.
