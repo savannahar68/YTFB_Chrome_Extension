@@ -1,26 +1,30 @@
 {
-  "name":"Video Volume Sync and Ad Skip",
+  "name": "Video Volume Sync and Ad Skip",
   "short_name": "Video Volume Sync and Ad Skip",
-  "description":"A simple extension that synchronizes audio of all the video (Needed on facebook where all the videos are on 100% volume or mute) and Ad skipper specially made for youtube",
+  "description": "A simple extension that synchronizes audio of all the video (Needed on facebook where all the videos are on 100% volume or mute) and Ad skipper specially made for youtube",
   "manifest_version": 2,
-  "version":"0.1.0",
-  "author":"Savan Nahar",
+  "version": "0.1.0",
+  "author": "Savan Nahar",
   "homepage_url": "https://github.com/savannahar68",
-  "permissions": [
-    "storage"
-  ],
-  "content_scripts":[
+  "permissions": ["storage"],
+  "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "js":["adskip.js"],
+      "js": ["adskip.js"],
       "run_at": "document_end",
       "all_frames": true
     },
     {
       "matches": ["*://*.facebook.com/*"],
-      "js":["fbVolSync.js"],
+      "js": ["fbVolSync.js"],
       "run_at": "document_end",
       "all_frames": true
+    },
+    {
+      "matches": ["*://*.facebook.com/*", "*://*.facebookcorewwwi.onion/*"],
+      "css": ["content.css"],
+      "js": ["fbSkipAd.js"],
+      "run_at": "document_idle"
     }
   ],
   "icons": {
